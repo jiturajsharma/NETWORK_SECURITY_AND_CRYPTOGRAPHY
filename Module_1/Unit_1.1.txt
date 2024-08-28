@@ -1,0 +1,114 @@
+Unit 1.1.1___Introduction of Security Attacks
+
+-> Network security a wide-ranging topic with a multilayed approach. The data link layer, network layer and device layer can be discussed. Theconcerns involved are interference and encryption of packets, IP packets and routing tables with their version upgrade, and host-level vulnerabilities thatt have arisen in the data link layer, network layer and framwork, respectively.
+
+** What is Atactive attack?
+                Active attacks involves direct interference or manipulation of data during its trasmission or while it is stored. Unlike passive attacks, which only observed or capture data, active attacks actively alter or disrupt the data or system to achieve malicious objectives.
+
+                ** Characteristics of Active Attacks:
+                -> Interference :- The attacker interferes with the data or system operations.
+                -> Modification :- Data can be altered, forged or corrupted.
+                -> Disruption :- Services or systems can be distrupted or rendered anavailable.
+                -> Impersonation :- Attackers may impersonate legitimate users or system to gain anauthorized access or perform malicious actions.
+
+                ** Example of Active Attacks:
+            1. Man-in-the- Middle Attack : The attacker intercepts and potentially alters communication between two parties without their knowledge.
+            2. Data Modification :- The attacker alters the content of transmitted data, potentially changing its meaning or corruption it.
+
+            ** Defence Mechanisms
+        * Encryption :- Protects data from anauthorized access and alteration.
+        * Integrity Checks :- Ensures data has not been tempered with during trasmission.
+        * Authentication :- Verifies the identity of users and systems to prevent Impersonation.
+        * Instrusion Detectio System (IDS) : Monitors and alerts on suspicious activies that may indicate active attacks.
+
+
+
+** What is Passive Attack?
+            -> passive attacks are Characterized by the anauthorizedmonitoring or eavesdropping or communications or data without altering or intefering with them. The primary goal of passive attacks is to gather information covertly without distrupting attacks is to gather information covently without disruption or modifying the data being trasmitted.
+
+            ** Characteristics of Passive Attack
+        * Non-Intrusive :- The attacker does not alter or affect the data or system operations.
+        *information Gathering :- Aims to collect sensitive or valuable information from data trasmission or communications.
+
+            ** Example of Passive Attack
+        1. Traffic Analysis :- The attacker examines patterns in network traffic to infer detals about the data being transmitted or the nature of the communication even if the actual content is not visible.
+
+        ** Defence Mechanisms
+    * Encryption :- Protects the confidentiality of data, making it difficult for attacker to make sense of intercepted data.
+    * Secure Protocols :- Use secure communication protocols the provides confidentialityand integrity such as HTTPS or VPNs
+    * Access Control :- Restricts access to network and system resouces, minimizing opportunities for unauthorized monitoring.
+
+
+** What is difference between Active and Passive Attack?
+
+Active Attack:-
+        >> Action :- Direct manipulation or disruption of data
+        >> Objective :- Alter or disrupt data and system
+        >> Impact on Data : -Modifies or corrupts data
+        >> Detection :- Easier to detect due to disruptions
+        >> Example :- Man-in-the-middle, DoS, Data integrity
+        >> Defence :- Encryption, integrity checks, IDS
+
+Passive Attack :
+        >> Action :- Observing or capturing data without altering.
+        >> Objective:- Gather information secretly.
+        >> Impact on Data:- No Modification of data
+        >> Detection :- Harder to detect as there are no visible disruptions
+        >> Example :- Evesdropping, Traffic, Analysis
+        >> Defence:- Encryption, secure, protocols, network, segmentation.
+
+
+** What is Farbication ?
+-> Fabrication refers to a type of attack in network security where an attacker creates and injects false or misleading data into a system, network, or communication channel. This process involves generating data that appears legitimate but is designed to deceive or mislead the system or its users.
+
+Key Aspects of Fabrication:
+Objective: To introduce false information or data into a system with the intention of misleading, deceiving, or manipulating the system or its users.
+
+Types of Fabrication:
+
+Data Injection: Injecting false data into a system or database to corrupt information or mislead users.
+False Data Generation: Creating and sending fake data packets in a network to disrupt communication or gain unauthorized access.
+Spoofing: Pretending to be a legitimate entity by falsifying identity or credentials to gain unauthorized access or perform malicious actions.
+Impact:
+
+Data Integrity: Compromises the accuracy and reliability of data.
+System Trust: Erodes trust in the system or communication channels if the false data is not detected.
+Operational Disruption: Can cause operational issues or system failures if the fabricated data interferes with normal operations.
+Examples of Fabrication:
+Spoofing: An attacker pretends to be a legitimate user or system by falsifying IP addresses or email addresses.
+Fake News: Spreading false information through digital channels to manipulate public opinion or create confusion.
+Database Injection: Inserting false records into a database to corrupt the data or affect application behavior.
+Defense Mechanisms:
+Data Validation: Implementing rigorous checks to ensure the authenticity and integrity of data.
+Authentication: Verifying the identity of users and systems to prevent spoofing and unauthorized access.
+Encryption: Protecting data in transit to prevent unauthorized manipulation or fabrication.
+Integrity Checks: Using cryptographic techniques like hashes to verify that data has not been altered.
+
+
+** What is Modification :- 
+Modification in the context of network security refers to the unauthorized alteration of data, communications, or system configurations. This type of attack involves changing or corrupting information, which can compromise data integrity, disrupt system operations, or deceive users.
+
+Key Aspects of Modification:
+Objective: To alter or corrupt data or system configurations to achieve malicious goals, such as misleading users, disrupting services, or gaining unauthorized access.
+
+Types of Modification Attacks:
+
+Data Modification: Changing the content of data during transmission or storage. For example, altering financial transactions to divert funds.
+Message Tampering: Modifying messages or communication packets in transit to deceive the recipient or disrupt communication.
+Configuration Changes: Altering system or network configurations to weaken security controls or create vulnerabilities.
+File Manipulation: Modifying files or code to introduce malicious payloads or change their behavior.
+Impact:
+
+Data Integrity: Compromises the accuracy and reliability of data, leading to incorrect or misleading information.
+System Functionality: Can disrupt normal system operations, potentially causing failures or vulnerabilities.
+User Trust: Erodes trust in the system or service if users are misled or affected by tampered data.
+Examples of Modification Attacks:
+Man-in-the-Middle Attack: Intercepting and altering communication between two parties without their knowledge.
+Data Breach: Gaining unauthorized access to a database and modifying or corrupting records.
+Code Injection: Inserting malicious code into a program or system to alter its behavior or introduce vulnerabilities.
+Message Alteration: Changing the content of messages in an email or communication to mislead the recipient.
+Defense Mechanisms:
+Encryption: Protects data in transit and at rest from unauthorized modification.
+Integrity Checks: Uses cryptographic hash functions or checksums to verify that data has not been altered.
+Access Controls: Ensures that only authorized users or systems can modify data or configurations.
+Auditing and Monitoring: Tracks changes to data and configurations to detect and respond to unauthorized modifications.
